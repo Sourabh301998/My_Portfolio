@@ -1,0 +1,1032 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #e7dede;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 0.5em;
+  text-align: center;
+  color: lch(100% 0.01 296.81); 
+}
+
+p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  text-align: center;
+  margin: 0 auto;
+  max-width: 80%;
+  color: #141412;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5em auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  backdrop-filter: blur(6px);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #072ca4;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ed0a0a;
+  text-shadow: 0 0 5px #00bcd4;
+}
+
+.hero {
+  padding: 4rem 1rem 2rem;
+  background: linear-gradient(to right, #9574cf, #91614e);
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.wave-container svg {
+  display: block;
+  width: 100%;
+  height: 80px;
+  fill: #f0f9ff;
+}
+
+.animation-container {
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.floating-icons {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  margin: 3rem auto;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.icon {
+  width: clamp(40px, 10vw, 70px);
+  height: auto;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: linear-gradient(to right, #f6f6f6, #727373);
+  font-size: 0.9rem;
+  color: #ffffff;
+  margin-top: 2rem;
+}
+
+.footer a {
+  color: #38107fad;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .floating-icons {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  
+  h1 {
+    font-size: clamp(2rem, 6vw, 3rem);
+  }
+
+  .hero {
+    padding: 3rem 1rem;
+  }
+  /* === Styles only for Resume page === */
+.resume-page {
+  background-color: #f9f9fb;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  margin: 0;
+ }
+
+/* Header */
+.resume-page header {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+ }
+
+.resume-page header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+ }
+
+.resume-page nav {
+  margin-top: 10px;
+ }
+
+.resume-page nav a {
+  color: #00adb5;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+ }
+
+.resume-page nav a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+ }
+
+/* Resume Section */
+.resume-page .resume-section {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 12px;
+ }
+
+.resume-page .resume-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #222;
+ }
+
+.resume-page .resume-section h3 {
+  font-size: 1.2rem;
+  color: #444;
+  margin-top: 10px;
+ }
+
+.resume-page .resume-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+ }
+
+.resume-page .resume-section ul {
+  padding-left: 20px;
+ }
+
+.resume-page .resume-section a {
+  color: #0077b6;
+  text-decoration: none;
+ }
+
+.resume-page .resume-section a:hover {
+  text-decoration: underline;
+ }
+
+/* Footer */
+.resume-page footer {
+  background-color: #607d8b;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+  font-size: 0.9rem;
+ }
+
+.resume-page footer a {
+  color: #ffd700;
+  text-decoration: none;
+ }
+
+.resume-page footer a:hover {
+  text-decoration: underline;
+ }
+
+}
+
+/* === Styles only for Resume page === */
+.resume-page {
+  background-color: #f0f4f8;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* Header */
+.resume-page header {
+  background-color: #243447;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.resume-page header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.resume-page nav {
+  margin-top: 10px;
+}
+
+.resume-page nav a {
+  color: #00d1d1;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.resume-page nav a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Resume Section */
+.resume-page .resume-section {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.resume-page .resume-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #2a2a2a;
+}
+
+.resume-page .resume-section h3 {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.resume-page .resume-section p,
+.resume-page .resume-section ul {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.resume-page .resume-section a {
+  color: #0077b6;
+  text-decoration: none;
+}
+
+.resume-page .resume-section a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.resume-page .resume-footer {
+  background-color: #243447;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+  font-size: 0.9rem;
+}
+
+.resume-page .resume-footer a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+.resume-page .resume-footer a:hover {
+  text-decoration: underline;
+}
+/* --- Scoped styles for Projects Page --- */
+.projects-page {
+  background-color: #f8f9fa;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  padding-bottom: 60px;
+}
+
+.projects-page header {
+  background-color: #003049;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.projects-page header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.projects-page nav {
+  margin-top: 10px;
+}
+
+.projects-page nav a {
+  color: #f1f1f1;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.projects-page nav a:hover {
+  color: #ffd60a;
+  transition: 0.3s;
+}
+
+.projects-page main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.projects-page h2 {
+  font-size: 2rem;
+  color: #003049;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.projects-page .project-card {
+  margin-bottom: 30px;
+  border-left: 5px solid #003049;
+  padding-left: 15px;
+  background-color: #f0f4f8;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.projects-page .project-card h3 {
+  margin-top: 0;
+  color: #001d3d;
+}
+
+.projects-page .project-card p {
+  margin-bottom: 0;
+  color: #333;
+}
+
+.projects-page footer {
+  background-color: #003049;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  margin-top: 50px;
+}
+/* --- Scoped styles for Contact Page --- */
+.contact-page {
+  background-color: #fdfefe;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  padding-bottom: 60px;
+}
+
+.contact-page header {
+  background-color: #1e3d59;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.contact-page header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.contact-page nav {
+  margin-top: 10px;
+}
+
+.contact-page nav a {
+  color: #f1f1f1;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-page nav a:hover {
+  color: #00d4ff;
+  transition: 0.3s;
+}
+
+.contact-page main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.contact-info {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.contact-info a {
+  color: #0077b6;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-page h2 {
+  font-size: 2rem;
+  color: #1e3d59;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.contact-page form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-page input,
+.contact-page textarea {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-page button {
+  background-color: #1e3d59;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-page button:hover {
+  background-color: #145374;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-page footer {
+  background-color: #1e3d59;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  margin-top: 50px;
+}
+/* -------------------- Responsive Design -------------------- */
+@media screen and (max-width: 768px) {
+  .resume-page main,
+  .projects-page main,
+  .contact-page main {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .resume-page header h1,
+  .projects-page header h1,
+  .contact-page header h1 {
+    font-size: 2rem;
+  }
+
+  .resume-page nav a,
+  .projects-page nav a,
+  .contact-page nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .resume-page ul,
+  .projects-page ul {
+    padding-left: 20px;
+  }
+
+  .projects-page .project-card {
+    width: 100%;
+  }
+
+  .contact-page input,
+  .contact-page textarea {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .contact-page lottie-player {
+  display: block;
+  margin: 0 auto 30px;
+}
+.resume-page lottie-player,
+.projects-page lottie-player,
+.contact-page lottie-player {
+  display: block;
+  margin: 0 auto 30px;
+}
+
+}
+/* Scoped styles for resume page */
+body.resume-page {
+  background-color: #f4f8fc;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.resume-page header {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.resume-page nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.resume-page main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.resume-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.resume-section h3 {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #555;
+}
+
+.resume-section p,
+.resume-section ul {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.resume-section ul {
+  padding-left: 20px;
+}
+
+.resume-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #869ca3;
+  color: #fff;
+  margin-top: 60px;
+}
+
+.resume-footer a {
+  color: #0d069b;
+  text-decoration: underline;
+}
+/* ---------------- RESUME PAGE STYLES ---------------- */
+body.resume-page {
+  background-color: #f2f6fc;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.resume-page header {
+  background-color: #1e293b;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.resume-page nav {
+  margin-top: 10px;
+}
+
+.resume-page nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.resume-page nav a:hover {
+  color: #60a5fa;
+}
+
+.resume-page main {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+}
+
+.resume-section {
+  text-align: left;
+}
+
+.resume-section h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.resume-section h3 {
+  font-size: 20px;
+  margin-top: 25px;
+  color: #374151;
+}
+
+.resume-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #334155;
+}
+
+.resume-section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #1f2937;
+}
+
+.resume-footer {
+  background-color: #1e293b;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  font-size: 14px;
+}
+
+.resume-footer a {
+  color: #93c5fd;
+  text-decoration: none;
+}
+/* === Scoped Styles for Resume Page Only === */
+.resume-page {
+  background-color: #f2f6fc;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+}
+
+/* Resume Section Styling */
+.resume-page .resume-section {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+.resume-page .resume-section h2,
+.resume-page .resume-section h3 {
+  color: #1a237e;
+  font-weight: 600;
+}
+
+.resume-page .resume-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.resume-page .resume-section h3 {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+/* Text */
+.resume-page .resume-section p,
+.resume-page .resume-section ul {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.resume-page .resume-section ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+/* Links */
+.resume-page .resume-section a {
+  color: #0077b6;
+  text-decoration: none;
+}
+
+.resume-page .resume-section a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.resume-page footer {
+  background-color: #1a237e;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+  border-radius: 0 0 12px 12px;
+}
+/* === Resume Page Left Alignment Fixes === */
+.resume-page .resume-section {
+  text-align: left;
+}
+
+.resume-page .resume-section h2,
+.resume-page .resume-section h3,
+.resume-page .resume-section p,
+.resume-page .resume-section ul,
+.resume-page .resume-section li {
+  text-align: left;
+  margin-left: 0;
+}
+
+.resume-page .resume-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.resume-page .resume-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.resume-page .resume-section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 10px;
+}
+/* === Scoped Styles for Resume Page Only === */
+.resume-page {
+  background-color: #f2f6fc;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+}
+
+/* Header */
+.resume-page header {
+  background-color: #1e293b;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.resume-page header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.resume-page nav {
+  margin-top: 10px;
+}
+
+.resume-page nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.resume-page nav a:hover {
+  color: #60a5fa;
+}
+
+/* Resume Section */
+.resume-page .resume-section {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.resume-page .resume-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1a237e;
+  font-weight: 600;
+  text-align: center;
+}
+
+.resume-page .resume-section h3 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #1a237e;
+  font-weight: 600;
+}
+
+.resume-page .resume-section p,
+.resume-page .resume-section ul,
+.resume-page .resume-section li {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #334155;
+  text-align: left;
+  margin-left: 0;
+}
+
+.resume-page .resume-section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+/* Links */
+.resume-page .resume-section a {
+  color: #0077b6;
+  text-decoration: none;
+}
+
+.resume-page .resume-section a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.resume-page footer,
+.resume-page .resume-footer {
+  background-color: #93949b;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+  border-radius: 0 0 12px 12px;
+}
+
+.resume-page .resume-footer a {
+  color: #93c5fd;
+  text-decoration: none;
+}
+
+.resume-page .resume-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Resume Responsive Design */
+@media screen and (max-width: 768px) {
+  .resume-page main {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .resume-page header h1 {
+    font-size: 2rem;
+  }
+
+  .resume-page nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .resume-page .resume-section h2 {
+    font-size: 1.75rem;
+  }
+
+  .resume-page .resume-section h3 {
+    font-size: 1.1rem;
+  }
+
+  .resume-page .resume-section {
+    padding: 20px;
+  }
+}
+/* Resume Card Container */
+.resume-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+}
+
+/* Download Button */
+.download-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+.download-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Animated Heading */
+.animated-heading {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: 0.1s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Resume Section Card */
+.resume-card {
+  background: #4307790a;
+  border-radius: 12px;
+  padding: 25px 40px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  line-height: 1.7;
+  text-align: left; /* ✅ Align text to left */
+}
+
+/* Resume Header */
+.resume-card h2,
+.resume-card h3,
+.resume-card h4,
+.resume-card p,
+.resume-card ul,
+.resume-card li {
+  text-align: left; /* ✅ Force all headings and content left */
+  margin-left: 0;
+}
+
+/* Download Resume Button */
+.download-btn {
+  display: inline-block;
+  padding: 10px 22px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+.download-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Animated Heading */
+.animated-heading {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: 0.1s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

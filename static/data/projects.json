@@ -1,0 +1,14 @@
+[
+  {
+    "title": "LinkedIn Resume Analyzer",
+    "description": "AI-powered app to analyze resumes and generate insights.",
+    "tech_stack": ["Python", "OpenAI API", "Streamlit"],
+    "link": "https://github.com/Sourabh301998/linkedin-resume-analyzer"
+  },
+  {
+    "title": "AIspire Roadmaps",
+    "description": "Generates career roadmaps using Google Gemini.",
+    "tech_stack": ["Python", "Gemini API", "Streamlit"],
+    "link": "https://github.com/Sourabh301998/AIspire-Roadmaps"
+  }
+]

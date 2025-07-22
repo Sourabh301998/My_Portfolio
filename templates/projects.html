@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects | Sourabh's Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body class="projects-page">
+  <header>
+    <h1>My Projects</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/resume">Resume</a>
+      <a href="/projects">Projects</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <lottie-player 
+      src="{{ url_for('static', filename='lottie/projects.json') }}"  
+      background="transparent"  
+      speed="1"  
+      style="width: 100%; max-width: 400px; margin: 0 auto 30px;"  
+      loop autoplay>
+    </lottie-player>
+
+    <h2>Projects</h2>
+
+    <div class="projects-container">
+
+      <div class="project-card">
+        <h3>LinkedIn Resume Analyzer</h3>
+        <p>AI-powered resume analyzer built with Streamlit and OpenAI API. Generates insights and suggestions for resume improvement.</p>
+        <a href="https://github.com/Sourabh301998/linkedin-resume-analyzer" target="_blank">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <h3>AIspire Roadmaps</h3>
+        <p>Generative AI-driven roadmap recommender for career growth in tech domains like Data Science and Full Stack Development.</p>
+        <a href="https://github.com/Sourabh301998/AIspire-Roadmaps" target="_blank">View Project</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer style="background-color: #869ca3; color: #fff; text-align: center; padding: 10px; margin-top: 80px;">
+    <p>© 2025 Sourabh Ranbhise | <a href="mailto:sourabh@example.com" style="color: #0d069b;">Contact Me</a></p>
+  </footer>
+</body>
+</html>

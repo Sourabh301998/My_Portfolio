@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>My Data Science Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+
+  <!-- Hero Section with Wave -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to My Portfolio</h1>
+      <p>I'm Sourabh, an aspiring Data Scientist passionate about AI and Generative AI.</p>
+      <nav class="navbar">
+        <a href="/">Home</a>
+        <a href="/resume">Resume</a>
+        <a href="/projects">Projects</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </div>
+    <!-- SVG Wave -->
+    <div class="wave-container">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+        <path d="M0.00,49.98 C150.00,150.00 349.36,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" 
+              style="stroke: none; fill: #f9f9f9;"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Lottie Animation Section -->
+  <div class="animation-container">
+    <lottie-player src="{{ url_for('static', filename='animation.json') }}"
+                   background="transparent" speed="1" style="width: 100%; max-width: 400px; height: auto; margin: 0 auto; display: block;" loop autoplay>
+    </lottie-player>
+  </div>
+
+  <!-- Floating Tech Icons -->
+  <div class="floating-icons">
+    <img src="{{ url_for('static', filename='images/python.png') }}" class="icon icon1" alt="Python Icon" />
+    <img src="{{ url_for('static', filename='images/flask.png') }}" class="icon icon2" alt="Flask Icon" />
+    <img src="{{ url_for('static', filename='images/numpy.png') }}" class="icon icon3" alt="NumPy Icon" />
+    <img src="{{ url_for('static', filename='images/pandas.png') }}" class="icon icon4" alt="Pandas Icon" />
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 <strong>Sourabh Ranbhise</strong> | <a href="/contact">Contact Me</a></p>
+  </footer>
+
+</body>
+</html>

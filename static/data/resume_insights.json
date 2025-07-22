@@ -1,0 +1,31 @@
+{
+    "name": "Sourabh Ranbhise",
+    "title": "Aspiring Data Scientist & AI Engineer",
+    "contact": {
+    "email": "sourabhranbhise@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/sourabh-ranbhise-67a4ba257/"
+  },
+  "summary": "Motivated individual with a passion for Data Science, Machine Learning, and building real-world AI apps.",
+  "skills": [
+    "Python", "Pandas", "Matplotlib", "Seaborn",
+  "SQL", "Scikit-learn", "Git", "Streamlit","Application Support",
+    "OpenAI"
+],
+"experience": [
+    {
+      "title": "Application Support Engineer",
+      "company": "Crest IT Consulting (Client: Axis Bank)",
+      "duration": "Dec-2022 - Present",
+      "description": "An application support engineer ensures the smooth operation and optimal performance of software applications by providing technical assistance, troubleshooting issues, and maintaining the systems. They serve as a bridge between end-users and the development teams, aiming to quickly resolve problems and enhance user experience."
+    }
+   
+  ],
+  "education": [
+    {
+      "degree": "MBA in Finance and Environment Management",
+      "institution": "CSIBER Kolhapur",
+      "year": "2019-2021"
+    }
+  ]
+}
+

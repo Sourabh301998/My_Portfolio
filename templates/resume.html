@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume | Sourabh's Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body class="resume-page">
+  <header>
+    <h1>Resume Insights</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/resume">Resume</a>
+      <a href="/projects">Projects</a>
+      <a href="/contact">Contact</a>
+    </nav>
+    <div style="margin-top: 10px;">
+      
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <lottie-player 
+      src="{{ url_for('static', filename='lottie/resume.json') }}"  
+      background="transparent"  
+      speed="1"  
+      style="width: 100%; max-width: 400px; margin: 0 auto 30px;"  
+      loop autoplay>
+    </lottie-player>
+
+    <!-- Summary Block -->
+    <section class="resume-card">
+      <h2>{{ insights.name }}</h2>
+      <h3>{{ insights.title }}</h3>
+      <p><strong>Email:</strong> 
+        <a href="mailto:{{ insights.contact.email }}">{{ insights.contact.email }}</a>
+      </p>
+      <p><strong>LinkedIn:</strong> 
+        <a href="{{ insights.contact.linkedin }}" target="_blank">{{ insights.contact.linkedin }}</a>
+      </p>
+      <h3 class="animated-heading">Summary</h3>
+      <p>{{ insights.summary }}</p>
+      
+      
+      <!-- Download PDF Button -->
+      <div style="text-align: center; margin-top: 15px;">
+        <a href="{{ url_for('static', filename='data/Sourabh_Ranbhise_Resume.pdf') }}" download class="download-btn">
+          📄 Download My Resume (PDF)
+        </a>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="resume-card">
+      <h3 class="animated-heading">Skills</h3>
+      <ul>
+        {% for skill in insights.skills %}
+          <li>{{ skill }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <!-- Experience -->
+    <section class="resume-card">
+      <h3 class="animated-heading">Experience</h3>
+      {% for exp in insights.experience %}
+        <h4>{{ exp.title }} - {{ exp.company }}</h4>
+        <p><em>{{ exp.duration }}</em></p>
+        <p>{{ exp.description }}</p>
+      {% endfor %}
+    </section>
+
+    <!-- Education -->
+    <section class="resume-card">
+      <h3 class="animated-heading">Education</h3>
+      {% for edu in insights.education %}
+        <p><strong>{{ edu.degree }}</strong><br>
+        {{ edu.institution }} ({{ edu.year }})</p>
+      {% endfor %}
+    </section>
+  </main>
+
+  <footer class="resume-footer">
+    <p>© 2025 Sourabh Ranbhise | 
+      <a href="mailto:sourabh@example.com">Contact Me</a>
+    </p>
+  </footer>
+</body>
+</html>
