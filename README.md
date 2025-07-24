@@ -81,14 +81,5 @@ Feel free to reach out for collaborations, internships, or feedback!
 
 ---
 
-### ✅ Next Steps
 
-- [ ] Replace the **Live Demo** link after deployment.
-- [ ] Add **screenshots** under the Preview section.
-- [ ] Push this file as `README.md` in your GitHub repo:
-
-```bash
-git add README.md
-git commit -m "Add professional README"
-git push
 
